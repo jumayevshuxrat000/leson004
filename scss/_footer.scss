@@ -1,0 +1,133 @@
+.container {
+    max-width: 1272px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+  
+  footer {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+    text-align: center;
+  
+    .subscribe-section {
+        padding-top: 20px;
+        padding-bottom: 40px;
+      margin-bottom: 40px;
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      border-bottom:  1px solid #DDDDDD;
+  
+      h2 {
+        font-size: 36px;
+        font-weight: 500;
+        margin-bottom: 20px;
+      }
+  
+      form {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+  
+        input {
+          padding: 10px;
+          font-size: 16px;
+          border: 1px solid #ccc;
+          border-radius: 5px 0 0 5px;
+          outline: none;
+          width: 250px;
+        }
+  
+        button {
+          padding: 10px 20px;
+          font-size: 16px;
+          border: none;
+          background-color: #4d3227;
+          color: #fff;
+          border-radius: 0 5px 5px 0;
+          cursor: pointer;
+        }
+      }
+    }
+  
+    .footer-section-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 40px;
+      place-items: center;
+      text-align: left;
+      padding-top: 20px;
+  
+      @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+  
+      .about-section-us, .quick-links, .contact-us {
+        cursor: default;
+        img {
+            margin-bottom: 39px;
+        }
+        h3 {
+          font-weight: 500;
+          font-size: 20px;
+          margin-bottom: 39px;
+        }
+  
+        p{
+          font-size: 18px;
+          font-weight: 400;
+          margin-bottom: 10px;
+          color: #555555;
+        }
+
+        li {
+            color: #222222;
+            margin: 5px;
+        }
+      }
+  
+      .quick-links ul, .contact-us p {
+        list-style: none;
+        padding: 0;
+      }
+  
+      .social-media {
+        a {
+          margin-right: 10px;
+          font-size: 20px;
+          color: #000;
+          text-decoration: none;
+  
+          &:hover {
+            color: #4d3227;
+          }
+        }
+      }
+    }
+  }
+  
+@media (max-width: 665px) {
+    footer {
+        .subscribe-section {
+            display: grid;
+            grid-template-columns: auto;
+        }
+    }
+}
+@media (max-width: 387px) {
+    footer {
+        .subscribe-section {
+            display: grid;
+            grid-template-columns: auto;
+            form {
+                input {
+                    width: 100px;
+                }
+                button {
+                    padding: 10px 5px;
+                }
+            }
+        }
+    }
+}

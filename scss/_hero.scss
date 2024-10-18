@@ -1,0 +1,81 @@
+.hero-section {
+    background-color: #F9F5F4;
+    .hero-section__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .hero-section__info {
+            h3 {
+                padding-top: 10px;
+                font-size: 56px;
+                font-weight: 500;
+                margin-bottom: 30px;
+            }
+            p {
+                font-size: 20px;
+                font-weight: 400;
+                margin-bottom: 30px;
+            }
+            form {
+                position: relative;
+                input {
+                    width: 326px;
+                    height: 48px;
+                    border: none;
+                    text-indent: 1.5em;
+                }
+                button {
+                    background-color: transparent;
+                    border: none;
+                    position: absolute;
+                    top: -39px;
+                    left: 253px;
+                }
+            }
+            button {
+                font-size: 16px;
+                font-weight: 500;
+                margin-top: 30px;
+                margin-bottom: 30px;
+                padding: 16px 32px;
+                border: none;
+                color: #fff;
+                background-color: $bg;
+            }
+        }
+    }
+}
+@media (max-width: 1180px) {
+    .hero-section {
+        .hero-section__wrapper {
+            .hero-section__info {
+                h3 {
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1180px) {
+    .hero-section__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width: 381px) {
+    .hero-section {
+        .hero-section__wrapper {
+            .hero-section__info {
+                form {
+                    input {
+                        width: 250px;
+                    }
+                    button {
+                        padding: 13px 11px;
+                        translate: 0px 7px;
+                    }
+                }
+            }
+        }
+    }
+}

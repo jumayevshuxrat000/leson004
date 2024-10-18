@@ -1,0 +1,32 @@
+.category-section__paragraph{
+    p {
+        font-size: 10px;
+        font-weight: 400;
+        color: #E4E4E4;
+        margin-top: 51px;
+        margin-bottom: 51px;
+    }
+}
+
+.category-section__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 120.2px;
+        padding-top: 42.5px;
+        padding-bottom: 42.5px;
+        border: 1px solid black;
+        overflow: auto;
+        border: none;
+        border-top: 1px solid #E4E4E4;
+        border-bottom: 1px solid #E4E4E4;
+        &::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        .category-section__image {
+            min-width: 100px;
+            width: 100px;
+            height: 30px;
+        }
+    }

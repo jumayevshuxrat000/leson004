@@ -1,0 +1,51 @@
+.amazing-products__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 37px;
+    place-items: center;
+    margin-bottom: 130px;
+    .amazing-products__info {
+        h3 {
+            font-size: 30px;
+            font-weight: 500;
+            margin-bottom: 12px;
+        }
+        img {
+            margin-bottom: 43px;
+        }
+        p {
+            font-size: 20px;
+            font-weight: 400;
+            color: #555555;
+            margin-bottom: 79px;
+        }
+        h4 {
+            font-size: 30px;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        h5 {
+            font-size: 20px;
+            font-weight: 400;
+            color: #555555;
+        }
+        button {
+            margin-top: 22px;
+            padding: 8px 14px;
+            border: 1px solid #6FB58726;
+            background-color: transparent;
+            border-radius: 50%;
+        }
+        .right {
+            margin-left: 20px;
+        }
+    }
+}
+
+@media (max-width: 990px) {
+    .amazing-products__wrapper {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        text-align: center;
+    }
+}
